@@ -1,0 +1,39 @@
+18:55:21,661 - sequence
+18:55:21,662 - room RoomA3 contains blocks:  G Y Y Y Y Y
+18:55:21,662 - room RoomA2 contains blocks:  P G P R B
+18:55:21,662 - room RoomB3 contains blocks: 
+18:55:21,662 - room RoomC1 contains blocks:  Y W O
+18:55:21,662 - room RoomA1 contains blocks:  R Y O
+18:55:21,662 - room RoomB2 contains blocks:  G P O
+18:55:21,662 - room RoomC3 contains blocks:  B
+18:55:21,662 - room RoomB1 contains blocks:  G Y W
+18:55:21,662 - room RoomC2 contains blocks:  Y Y G R
+18:55:21,662 - sequence G G Y Y P Y
+18:55:25,239 - action Bot_1 goTo(RoomC3)
+18:55:26,038 - action Bot_2 goTo(RoomC2)
+18:55:26,218 - action Bot_3 goTo(RoomA2)
+18:55:32,620 - action Bot_1 goTo(FrontRoomC3)
+18:55:33,032 - action Bot_2 goToBlock(62)
+18:55:33,900 - action Bot_2 pickUp(62)
+18:55:34,950 - action Bot_2 goTo(FrontRoomC3)
+18:55:37,060 - action Bot_2 goTo(RoomC3)
+18:55:37,097 - action Bot_3 goToBlock(44)
+18:55:37,308 - total time is 305 minutes and 30 seconds
+18:55:37,308 - agentsummary Bot_1 handicaps none
+18:55:37,308 - agentsummary Assembler gooddrops 0
+18:55:37,308 - agentsummary Assembler wrongdrops 0
+18:55:37,308 - agentsummary Assembler nmessage 0
+18:55:37,308 - agentsummary Assembler idletime 3.172
+18:55:37,308 - agentsummary Assembler nroomsentered 1
+18:55:37,308 - agentsummary Bot_2 handicaps none
+18:55:37,308 - agentsummary Retriever1 gooddrops 0
+18:55:37,308 - agentsummary Retriever1 wrongdrops 0
+18:55:37,308 - agentsummary Retriever1 nmessage 0
+18:55:37,308 - agentsummary Retriever1 idletime 3.099
+18:55:37,308 - agentsummary Retriever1 nroomsentered 1
+18:55:37,308 - agentsummary Bot_3 handicaps none
+18:55:37,308 - agentsummary Retriever2 gooddrops 0
+18:55:37,308 - agentsummary Retriever2 wrongdrops 0
+18:55:37,308 - agentsummary Retriever2 nmessage 0
+18:55:37,308 - agentsummary Retriever2 idletime 2.236
+18:55:37,308 - agentsummary Retriever2 nroomsentered 1

@@ -1,0 +1,11 @@
+10:22:46,678 - sequence
+10:22:46,684 - room RoomA3 contains blocks:  R Y
+10:22:46,684 - room RoomA2 contains blocks:  W B Y
+10:22:46,685 - room RoomB3 contains blocks:  R W P P P
+10:22:46,688 - room RoomC1 contains blocks:  O P B
+10:22:46,689 - room RoomA1 contains blocks:  G P
+10:22:46,689 - room RoomB2 contains blocks:  W R G
+10:22:46,690 - room RoomC3 contains blocks:  R Y R P
+10:22:46,690 - room RoomB1 contains blocks:  B B
+10:22:46,690 - room RoomC2 contains blocks:  G Y R O
+10:22:46,693 - sequence W B G P R R

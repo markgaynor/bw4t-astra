@@ -1,0 +1,93 @@
+package bw4t;
+import astra.lang.Strings;
+
+agent Main {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+	
+	types model {
+		formula retrieved(string); // Retriever has retrieved a block
+		formula remove(string); // Removing a block from the sequence
+		formula signalAssembler(string); // Informing the assembler that target blocks are acquired
+		formula sequence(list); // Target sequence of blocks
+	}
+	
+	rule +!main(list args) {
+		list agentCount = [3]; // List representation so that prelude casting can be used.
+		string agentCountStr = prelude.valueAsString(agentCount, 0);
+		int agentCountInt = prelude.valueAsInt(agentCount, 0);
+	
+		// Launches the client jar and connects to the server. 
+		ei.launch("bw4t", "bw4t-client-3.8.6.jar");
+		ei.init([agentcount(agentCountStr)]);
+		ei.join();
+		ei.startEnv();
+			
+		// Creates agents. 
+		system.createAgent("Assembler", "bw4t.Assembler");
+		system.createAgent("Semaphore", "bw4t.Semaphore");
+		int i = 1;
+		while(i<=agentCountInt-1){
+			string agentName = "Retriever" + i;
+			system.createAgent(agentName, "bw4t.Retriever");
+			i = i+1;
+		}
+		
+		// Receives the target sequence from the Assembler.
+		list sequence = [];
+		when(sequence(list L)){
+			C.println("Sequence received from Assembler.");
+			sequence = L;
+		}
+		
+		while(true){
+			// Handling when a Retriever has retrieved a block in the sequence or the Assembler has found it.
+			when(remove(string colour)){
+				i = 0;
+				int j = 0; // Control to prevent a colour from being removed from the sequence more than once
+				// Loops over the sequence and removes the first occurrence of that colour block.
+				while(i < prelude.size(sequence) & j == 0){
+					if(strings.equal(prelude.valueAsString(sequence, i), colour)){
+						boolean x = prelude.remove(sequence, i);
+						j = 1;
+					}
+					i = i+1;
+				}
+				
+				C.println("Blocks left to find:");	
+				forall(string block: sequence){
+					C.println(block);
+				}
+				
+				// Drops the belief.
+				-remove(colour);
+			}
+			
+			// All the blocks have been found...
+			if(prelude.size(sequence) == 0){
+				// Dispatches the assembler.
+				C.println("All blocks found. Signalling assembler...");
+        		send(inform, "Assembler", signalAssembler(""));
+        		
+        		// Terminates all Retriever agents.
+        		list retrievers = system.getAgentsOfType("bw4t.Retriever");
+        		forall (string agentName : retrievers) {
+        			system.terminateAgent(agentName);
+				}
+			}
+		}	
+	}
+	
+	// Assembler has sent the target sequence.
+	rule @message(inform, string sender, sequence(list L)){
+		+sequence(L);
+	}	
+	
+	// Retriever has retrieved a block in the sequence.
+	rule @message(inform, string sender, retrieved(string colour)) {
+		+remove(colour);
+    }
+}

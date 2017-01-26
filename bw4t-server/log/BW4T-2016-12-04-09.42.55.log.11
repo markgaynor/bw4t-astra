@@ -1,0 +1,48 @@
+10:18:40,106 - sequence
+10:18:40,106 - room RoomA3 contains blocks:  R Y G
+10:18:40,106 - room RoomA2 contains blocks:  B R O B R Y
+10:18:40,106 - room RoomB3 contains blocks:  P
+10:18:40,106 - room RoomC1 contains blocks:  G O
+10:18:40,106 - room RoomA1 contains blocks:  W O R O O O
+10:18:40,107 - room RoomB2 contains blocks:  Y P
+10:18:40,107 - room RoomC3 contains blocks:  Y B O R
+10:18:40,107 - room RoomB1 contains blocks:  G
+10:18:40,107 - room RoomC2 contains blocks:  W B P
+10:18:40,107 - sequence G Y B R W O
+10:25:08,710 - action Bot_1 goTo(RoomC3)
+10:25:09,975 - action Bot_3 goTo(RoomA1)
+10:25:10,066 - action Bot_2 goTo(RoomC2)
+10:25:16,818 - action Bot_2 goToBlock(63)
+10:25:20,038 - action Bot_3 goToBlock(50)
+10:25:20,697 - action Bot_3 pickUp(50)
+10:25:21,749 - action Bot_3 goTo(FrontRoomC3)
+10:25:21,858 - action Bot_1 goTo(FrontRoomC3)
+10:25:29,562 - action Bot_3 goTo(RoomC3)
+10:25:30,355 - action Bot_3 putDown
+10:25:30,630 - action Bot_3 goTo(RoomA1)
+10:25:40,837 - action Bot_3 goToBlock(51)
+10:25:41,473 - action Bot_3 pickUp(51)
+10:25:42,512 - action Bot_3 goTo(FrontRoomC3)
+10:25:50,329 - action Bot_3 goTo(RoomC3)
+10:25:51,050 - action Bot_3 putDown
+10:25:51,337 - action Bot_3 goTo(RoomA1)
+10:26:01,290 - action Bot_3 goToBlock(52)
+10:26:06,726 - total time is 43 minutes and 6 seconds
+10:26:06,726 - agentsummary Bot_1 handicaps none
+10:26:06,726 - agentsummary Assembler gooddrops 0
+10:26:06,726 - agentsummary Assembler wrongdrops 0
+10:26:06,726 - agentsummary Assembler nmessage 0
+10:26:06,726 - agentsummary Assembler idletime 8.928
+10:26:06,726 - agentsummary Assembler nroomsentered 1
+10:26:06,726 - agentsummary Bot_2 handicaps none
+10:26:06,726 - agentsummary Retriever1 gooddrops 0
+10:26:06,726 - agentsummary Retriever1 wrongdrops 0
+10:26:06,726 - agentsummary Retriever1 nmessage 0
+10:26:06,726 - agentsummary Retriever1 idletime 1.677
+10:26:06,726 - agentsummary Retriever1 nroomsentered 1
+10:26:06,726 - agentsummary Bot_3 handicaps none
+10:26:06,726 - agentsummary Retriever2 gooddrops 0
+10:26:06,726 - agentsummary Retriever2 wrongdrops 0
+10:26:06,726 - agentsummary Retriever2 nmessage 0
+10:26:06,726 - agentsummary Retriever2 idletime 9.509
+10:26:06,726 - agentsummary Retriever2 nroomsentered 5

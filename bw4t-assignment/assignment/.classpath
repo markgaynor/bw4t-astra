@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/Users/markgaynor/Dropbox/College/Semester 4/COMP41400 Multi-Agent Systems/Programming Assignment/bw4t-assignment/astra/astra.jar"/>
+	<classpathentry kind="lib" path="/Users/markgaynor/Dropbox/College/Semester 4/COMP41400 Multi-Agent Systems/Programming Assignment/bw4t-assignment/astra/cartago.jar"/>
+	<classpathentry kind="lib" path="/Users/markgaynor/Dropbox/College/Semester 4/COMP41400 Multi-Agent Systems/Programming Assignment/bw4t-assignment/astra/eis-0.5.jar"/>
+	<classpathentry kind="lib" path="/Users/markgaynor/Dropbox/College/Semester 4/COMP41400 Multi-Agent Systems/Programming Assignment/bw4t-assignment/astra/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/markgaynor/Dropbox/College/Semester 4/COMP41400 Multi-Agent Systems/Programming Assignment/bw4t-assignment/astra/mas-acre.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

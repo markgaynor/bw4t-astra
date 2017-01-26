@@ -1,0 +1,20 @@
+17:34:44,189 - sequence
+17:34:44,189 - room RoomA3 contains blocks:  O R R W P
+17:34:44,189 - room RoomA2 contains blocks:  G G
+17:34:44,189 - room RoomB3 contains blocks:  P B B
+17:34:44,189 - room RoomC1 contains blocks:  W
+17:34:44,189 - room RoomA1 contains blocks:  B P R O O P
+17:34:44,189 - room RoomB2 contains blocks:  P P O R W G
+17:34:44,189 - room RoomC3 contains blocks:  R O
+17:34:44,189 - room RoomB1 contains blocks:  Y R
+17:34:44,189 - room RoomC2 contains blocks:  B
+17:34:44,189 - sequence P B R P G G
+17:34:48,401 - action Bot_1 goTo(RoomC3)
+17:34:56,363 - action Bot_1 goTo(FrontRoomC3)
+17:35:00,064 - total time is 224 minutes and 52 seconds
+17:35:00,064 - agentsummary Bot_1 handicaps none
+17:35:00,064 - agentsummary Assembler gooddrops 0
+17:35:00,064 - agentsummary Assembler wrongdrops 0
+17:35:00,064 - agentsummary Assembler nmessage 0
+17:35:00,064 - agentsummary Assembler idletime 3.93
+17:35:00,064 - agentsummary Assembler nroomsentered 1

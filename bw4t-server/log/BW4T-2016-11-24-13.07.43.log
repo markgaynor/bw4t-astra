@@ -1,0 +1,54 @@
+13:07:45,087 - sequence
+13:07:45,089 - room RoomA3 contains blocks:  B B W
+13:07:45,089 - room RoomA2 contains blocks:  W R
+13:07:45,090 - room RoomB3 contains blocks:  O W G
+13:07:45,090 - room RoomC1 contains blocks:  P G
+13:07:45,091 - room RoomA1 contains blocks:  O O W P
+13:07:45,092 - room RoomB2 contains blocks:  B Y P W
+13:07:45,092 - room RoomC3 contains blocks:  O R R R
+13:07:45,093 - room RoomB1 contains blocks:  O R W Y
+13:07:45,094 - room RoomC2 contains blocks:  Y G
+13:07:45,096 - sequence O O Y B B O
+13:13:56,554 - action Bot_1 goTo(RoomA1)
+13:14:04,233 - action Bot_1 goToBlock(48)
+13:14:04,612 - action Bot_1 pickUp(48)
+13:14:05,353 - action Bot_1 goTo(DropZone)
+13:14:10,506 - action Bot_1 putDown
+13:14:10,710 - action Bot_1 goTo(RoomA1)
+13:14:15,935 - action Bot_1 goToBlock(49)
+13:14:16,420 - action Bot_1 pickUp(49)
+13:14:17,127 - action Bot_1 goTo(DropZone)
+13:14:22,446 - action Bot_1 putDown
+13:14:22,647 - action Bot_1 goTo(RoomA1)
+13:14:27,914 - action Bot_1 goToBlock(50)
+13:14:28,339 - action Bot_1 pickUp(50)
+13:14:29,019 - action Bot_1 goTo(DropZone)
+13:14:34,297 - action Bot_1 putDown
+13:14:34,504 - action Bot_1 goTo(RoomA1)
+13:14:39,737 - action Bot_1 goToBlock(51)
+13:14:40,141 - action Bot_1 pickUp(51)
+13:14:40,842 - action Bot_1 goTo(DropZone)
+13:14:46,082 - action Bot_1 putDown
+13:14:46,288 - action Bot_1 goTo(RoomA1)
+13:14:51,606 - action Bot_1 goTo(RoomA2)
+13:14:53,598 - action Bot_1 goToBlock(41)
+13:14:53,931 - action Bot_1 pickUp(41)
+13:14:54,614 - action Bot_1 goTo(DropZone)
+13:15:00,316 - action Bot_1 putDown
+13:15:00,511 - action Bot_1 goTo(RoomA2)
+13:15:06,171 - action Bot_1 goToBlock(42)
+13:15:06,588 - action Bot_1 pickUp(42)
+13:15:07,286 - action Bot_1 goTo(DropZone)
+13:15:13,013 - action Bot_1 putDown
+13:15:13,217 - action Bot_1 goTo(RoomA2)
+13:15:18,974 - action Bot_1 goTo(RoomA3)
+13:15:21,118 - action Bot_1 goToBlock(38)
+13:15:21,496 - action Bot_1 pickUp(38)
+13:15:22,194 - action Bot_1 goTo(DropZone)
+13:15:27,377 - action Bot_1 putDown
+13:15:27,575 - action Bot_1 goTo(RoomA3)
+13:15:32,777 - action Bot_1 goToBlock(39)
+13:15:33,060 - action Bot_1 pickUp(39)
+13:15:33,761 - action Bot_1 goTo(DropZone)
+13:15:38,853 - action Bot_1 putDown
+13:15:39,049 - action Bot_1 goTo(RoomA3)

@@ -1,0 +1,31 @@
+11:47:32,394 - sequence
+11:47:32,395 - room RoomA3 contains blocks:  Y W
+11:47:32,396 - room RoomA2 contains blocks:  R Y W
+11:47:32,396 - room RoomB3 contains blocks:  B W O B
+11:47:32,398 - room RoomC1 contains blocks:  Y R Y R G
+11:47:32,399 - room RoomA1 contains blocks:  Y B
+11:47:32,399 - room RoomB2 contains blocks:  B R
+11:47:32,399 - room RoomC3 contains blocks:  W O R B
+11:47:32,399 - room RoomB1 contains blocks:  P W W
+11:47:32,399 - room RoomC2 contains blocks:  R O O
+11:47:32,401 - sequence R Y Y P R Y
+11:47:34,820 - action Bot_1 goTo(FrontRoomC3)
+11:47:35,111 - action Bot_2 goTo(RoomA1)
+11:47:46,515 - action Bot_2 goToBlock(52)
+11:47:47,067 - action Bot_2 pickUp(52)
+11:47:47,846 - action Bot_2 goTo(RoomC3)
+11:47:56,299 - action Bot_2 putDown
+11:47:56,673 - action Bot_2 goTo(RoomA1)
+11:48:03,397 - total time is 28.577 seconds
+11:48:03,397 - agentsummary Bot_1 handicaps none
+11:48:03,397 - agentsummary Assembler gooddrops 0
+11:48:03,397 - agentsummary Assembler wrongdrops 0
+11:48:03,398 - agentsummary Assembler nmessage 0
+11:48:03,398 - agentsummary Assembler idletime 0.478
+11:48:03,398 - agentsummary Assembler nroomsentered 0
+11:48:03,398 - agentsummary Bot_2 handicaps none
+11:48:03,398 - agentsummary Retriever1 gooddrops 0
+11:48:03,398 - agentsummary Retriever1 wrongdrops 0
+11:48:03,398 - agentsummary Retriever1 nmessage 0
+11:48:03,398 - agentsummary Retriever1 idletime 4.696
+11:48:03,398 - agentsummary Retriever1 nroomsentered 2

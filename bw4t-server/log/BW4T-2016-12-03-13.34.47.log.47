@@ -1,0 +1,42 @@
+15:26:22,920 - sequence
+15:26:22,920 - room RoomA3 contains blocks:  R P W R
+15:26:22,920 - room RoomA2 contains blocks:  O P
+15:26:22,920 - room RoomB3 contains blocks:  G R
+15:26:22,920 - room RoomC1 contains blocks:  R W Y P P
+15:26:22,920 - room RoomA1 contains blocks:  O P G
+15:26:22,920 - room RoomB2 contains blocks:  P G W P
+15:26:22,920 - room RoomC3 contains blocks:  R B O B
+15:26:22,920 - room RoomB1 contains blocks: 
+15:26:22,920 - room RoomC2 contains blocks:  W R W B
+15:26:22,920 - sequence R R W W Y R
+15:27:55,415 - action Bot_1 goTo(RoomC3)
+15:27:56,104 - action Bot_2 goTo(RoomC2)
+15:27:56,190 - action Bot_3 goTo(RoomA2)
+15:28:02,994 - action Bot_2 goToBlock(62)
+15:28:03,623 - action Bot_2 pickUp(62)
+15:28:04,596 - action Bot_2 goTo(RoomC3)
+15:28:07,111 - Bot Bot_2 collided.
+15:28:08,365 - action Bot_1 goTo(FrontRoomC3)
+15:28:09,930 - action Bot_3 goTo(RoomA3)
+15:28:12,657 - action Bot_3 goToBlock(38)
+15:28:13,331 - action Bot_3 pickUp(38)
+15:28:14,290 - action Bot_3 goTo(RoomC3)
+15:28:18,080 - total time is 98 minutes and 10 seconds
+15:28:18,080 - agentsummary Bot_1 handicaps none
+15:28:18,080 - agentsummary Assembler gooddrops 0
+15:28:18,080 - agentsummary Assembler wrongdrops 0
+15:28:18,080 - agentsummary Assembler nmessage 0
+15:28:18,080 - agentsummary Assembler idletime 8.624
+15:28:18,080 - agentsummary Assembler nroomsentered 1
+15:28:18,080 - agentsummary Bot_2 handicaps none
+15:28:18,080 - agentsummary Retriever1 gooddrops 0
+15:28:18,080 - agentsummary Retriever1 wrongdrops 0
+15:28:18,080 - agentsummary Retriever1 nmessage 0
+15:28:18,080 - agentsummary Retriever1 idletime 2.701
+15:28:18,080 - agentsummary Retriever1 nroomsentered 1
+15:28:18,080 - agentsummary Bot_3 handicaps none
+15:28:18,080 - agentsummary Retriever2 gooddrops 0
+15:28:18,080 - agentsummary Retriever2 wrongdrops 0
+15:28:18,080 - agentsummary Retriever2 nmessage 0
+15:28:18,080 - agentsummary Retriever2 idletime 6.625
+15:28:18,080 - agentsummary Retriever2 nroomsentered 2

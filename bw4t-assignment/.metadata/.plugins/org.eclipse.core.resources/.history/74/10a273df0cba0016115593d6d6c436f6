@@ -1,0 +1,147 @@
+package bw4t;
+
+agent Retriever {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+
+	types model {
+		formula holding(long); // Holding a block
+		formula sequence(list); // Sequence percept from the environment
+		formula retrieved(string); // Informing main that a block has been retrieved
+		
+		// Exchange of information with the Semaphore.  
+		formula enteringC3(string);
+		formula exitingC3(string);
+		formula occupied(string);
+		formula vacant(string);
+		formula available(string);
+	}
+	
+	initial !init();
+	
+
+	rule +!init() {
+		// List of rooms in the environment.
+		list roomList = ["RoomA1", "RoomA2", "RoomA3", "RoomB1", "RoomB2", "RoomB3", "RoomC1", "RoomC2"];
+		+available("RoomC3"); // Agent initially believes that RoomC3 is not occupied.
+		
+		// Assigns the agent to a bot. 
+		int myBotIndex = prelude.size(system.getAgents()) - 2;
+		string myBotName = "Bot_" + myBotIndex;
+		C.println(myBotName);
+		
+		// Assigns the agent to an initial room based on the number of agents currently initialised. 
+		int myRoomIndex;
+		if (myBotIndex % 2 == 0){ 
+			// Reverses the room list (so that iterates through the rooms backwards) if even-numbered.
+			prelude.reverse(roomList);
+			myRoomIndex = myBotIndex - 2;
+		}
+		else{
+		myRoomIndex = myBotIndex - 3;
+		}
+		string myRoom = prelude.valueAsString(roomList, myRoomIndex);
+		
+		// Joins the environment, takes control of its bot and gets the target sequence.
+		ei.join("bw4t");
+		ei.link(myBotName);
+		// Receives the target sequence from the Assembler.
+		list retrieveSequence = [];
+		when(sequence(list L)){
+			retrieveSequence = L;
+		}	
+
+		if (myBotIndex % 2 == 0){ 
+			// Reverses the sequence list for even-numbered agents (optimisation).
+			prelude.reverse(retrieveSequence);
+		}
+		
+		// For every room, starting with the agent's initial rule. 
+		while (myRoomIndex < prelude.size(roomList)) {
+			// Goes to the room. 	
+			!at(myRoom);
+			
+			// Gets all the blocks in the room that interest us. 	
+			foreach (ei.color(long X, string F)){
+				int i = 0;
+				int j = 0; // Control to stop the agent from attempting to collect the same block twice
+				while(i < prelude.size(retrieveSequence)){
+					// If the current block matches a block in the sequence.
+					if(strings.equal(prelude.valueAsString(retrieveSequence, i), F) & j==0){
+						// Picks that block up and takes it outside Room C3. 
+						!atBlock(X);
+						!holding(X);
+						!at("FrontRoomC3");
+						wait(available("RoomC3"));	
+						send(inform, "Semaphore", enteringC3("RoomC3")); // Tells the semaphore 
+						!at("RoomC3");
+						
+						// Tells main that it has retrieved a block of that colour and returns to the room.
+						send(inform, "main", retrieved(F));
+						ei.putDown();
+						send(inform, "Semaphore", exitingC3("RoomC3")); // Tells the semaphore 
+						!at(myRoom);
+						boolean x = prelude.remove(retrieveSequence, i); // Removes that block index from internal sequence
+						j = 1;
+					}
+				i = i+1;
+				}
+			}
+
+        	// Sets the next room in the list as the room of interest (looping back if necessary). 
+        	if(myRoomIndex == 7){
+        		myRoomIndex = 1;
+        	}
+        	else{
+				myRoomIndex = myRoomIndex + 1;
+        	}
+			myRoom = prelude.valueAsString(roomList, myRoomIndex);
+        }
+	}
+
+// Rule for moving to a location.	
+rule +!at(string Location) : ~ei.at(Location) {
+	ei.goTo(Location);
+	wait(ei.at(Location));
+}
+
+// Rule for moving to a block.
+rule +!atBlock(long Block) {
+	ei.goToBlock(Block);
+	wait(ei.state("arrived"));
+}
+
+// Rule for picking up a block.
+rule +!holding(long Block) : ~ei.holding(long X) {
+	ei.pickUp(Block);
+	C.println("before");
+	wait(holding(Block));
+	-holding(Block);
+	C.println("after");
+}
+
+/**
+ * Example Rule to check some events...
+ */
+rule +$ei.event(holding(long Block)) {
+	C.println("holding:" +Block);
+	+holding(Block);
+}
+
+// Assembler has sent the target sequence.
+rule @message(inform, string sender, sequence(list L)){
+	+sequence(L);
+}	
+
+// Rules for handling messages from the semaphore.
+rule @message(inform, string sender, occupied(string room)){
+	-available("RoomC3");
+}
+rule @message(inform, string sender, vacant(string room)){
+	+available("RoomC3");
+}
+
+}

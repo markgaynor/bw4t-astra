@@ -1,0 +1,28 @@
+15:15:18,281 - sequence
+15:15:18,281 - room RoomA3 contains blocks:  W O
+15:15:18,281 - room RoomA2 contains blocks:  O G G
+15:15:18,281 - room RoomB3 contains blocks:  G O Y
+15:15:18,281 - room RoomC1 contains blocks:  G P P
+15:15:18,281 - room RoomA1 contains blocks:  O B G P P O
+15:15:18,281 - room RoomB2 contains blocks:  G
+15:15:18,281 - room RoomC3 contains blocks:  W B B
+15:15:18,281 - room RoomB1 contains blocks:  B Y O
+15:15:18,281 - room RoomC2 contains blocks:  W R G W
+15:15:18,281 - sequence G G O W O G
+15:15:22,010 - action Bot_1 goTo(RoomC3)
+15:15:22,442 - action Bot_2 goTo(RoomA1)
+15:15:32,125 - action Bot_2 goToBlock(49)
+15:15:32,692 - action Bot_2 pickUp(49)
+15:15:33,745 - total time is 85 minutes and 26 seconds
+15:15:33,745 - agentsummary Bot_1 handicaps none
+15:15:33,745 - agentsummary Assembler gooddrops 0
+15:15:33,745 - agentsummary Assembler wrongdrops 0
+15:15:33,745 - agentsummary Assembler nmessage 0
+15:15:33,745 - agentsummary Assembler idletime 0.706
+15:15:33,745 - agentsummary Assembler nroomsentered 1
+15:15:33,745 - agentsummary Bot_2 handicaps none
+15:15:33,745 - agentsummary Retriever1 gooddrops 0
+15:15:33,745 - agentsummary Retriever1 wrongdrops 0
+15:15:33,745 - agentsummary Retriever1 nmessage 0
+15:15:33,745 - agentsummary Retriever1 idletime 1.197
+15:15:33,745 - agentsummary Retriever1 nroomsentered 1

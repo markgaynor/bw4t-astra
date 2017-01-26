@@ -1,0 +1,38 @@
+package bw4t;
+import astra.lang.Strings;
+
+agent sequenceGetTest {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+	
+	types model {
+		formula sequence(list);
+	}
+	
+	rule +!main(list args) {
+		// Launches the client jar and connects to the server. 
+		ei.launch("bw4t", "bw4t-client-3.8.6.jar");
+		ei.init([agentcount("1")]);
+		ei.join();
+		ei.startEnv();
+		when(sequence(list L)){
+			list sequence = L;
+			C.println("Should be Green:");
+			C.println(prelude.valueAsString(L, 1));
+		}
+			
+		ei.link("Bot_1");
+		
+		
+    }
+
+// Rule for handling the sequence percept. 
+rule +$ei.event(sequence(list L)){
+	C.println("Got the sequence!");
+	+sequence(L);
+}
+
+}

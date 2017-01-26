@@ -1,0 +1,17 @@
+12:30:38,898 - sequence
+12:30:38,900 - room RoomA3 contains blocks:  O P P
+12:30:38,901 - room RoomA2 contains blocks:  O W
+12:30:38,901 - room RoomB3 contains blocks:  P Y B Y P
+12:30:38,904 - room RoomC1 contains blocks:  O P Y
+12:30:38,904 - room RoomA1 contains blocks:  Y W W W
+12:30:38,906 - room RoomB2 contains blocks:  O R
+12:30:38,906 - room RoomC3 contains blocks:  O
+12:30:38,907 - room RoomB1 contains blocks:  G W W
+12:30:38,907 - room RoomC2 contains blocks:  Y G Y W W
+12:30:38,909 - sequence P G O O O O
+12:36:49,971 - action Bot_1 goTo(RoomA1)
+12:36:56,335 - action Bot_1 goTo(RoomA2)
+12:36:58,697 - action Bot_1 goTo(RoomA3)
+12:37:01,388 - action Bot_1 goTo(RoomB1)
+12:37:06,419 - action Bot_1 goTo(RoomB2)
+12:37:08,781 - action Bot_1 goTo(RoomB3)

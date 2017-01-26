@@ -1,0 +1,12 @@
+15:37:07,948 - sequence
+15:37:07,948 - room RoomA3 contains blocks: 
+15:37:07,948 - room RoomA2 contains blocks:  Y G G
+15:37:07,948 - room RoomB3 contains blocks:  P Y
+15:37:07,949 - room RoomC1 contains blocks:  Y R R W G P
+15:37:07,949 - room RoomA1 contains blocks:  B O O
+15:37:07,949 - room RoomB2 contains blocks:  B Y
+15:37:07,950 - room RoomC3 contains blocks:  R
+15:37:07,950 - room RoomB1 contains blocks:  B R P
+15:37:07,950 - room RoomC2 contains blocks:  W R
+15:37:07,952 - sequence B G Y P O R
+15:40:22,578 - action Bot_1 goTo(RoomA1)

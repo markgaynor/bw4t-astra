@@ -1,0 +1,61 @@
+15:25:15,197 - sequence
+15:25:15,197 - room RoomA3 contains blocks:  R O B
+15:25:15,197 - room RoomA2 contains blocks:  P B W G
+15:25:15,197 - room RoomB3 contains blocks:  Y R
+15:25:15,197 - room RoomC1 contains blocks:  G G W R
+15:25:15,197 - room RoomA1 contains blocks:  P
+15:25:15,197 - room RoomB2 contains blocks:  R R O
+15:25:15,197 - room RoomC3 contains blocks:  P Y
+15:25:15,197 - room RoomB1 contains blocks:  Y B Y B P
+15:25:15,197 - room RoomC2 contains blocks:  O O O G
+15:25:15,197 - sequence P G Y Y O P
+15:25:18,307 - action Bot_1 goTo(RoomC3)
+15:25:19,002 - action Bot_2 goTo(RoomB1)
+15:25:19,102 - action Bot_3 goTo(RoomB3)
+15:25:26,695 - action Bot_2 goToBlock(57)
+15:25:26,795 - action Bot_3 goToBlock(45)
+15:25:27,382 - action Bot_1 goTo(FrontRoomC3)
+15:25:27,416 - action Bot_2 pickUp(57)
+15:25:27,492 - action Bot_3 pickUp(45)
+15:25:28,372 - action Bot_2 goTo(RoomC3)
+15:25:28,475 - action Bot_3 goTo(RoomC3)
+15:25:33,767 - action Bot_3 putDown
+15:25:33,950 - action Bot_3 goTo(RoomB3)
+15:25:35,277 - action Bot_2 putDown
+15:25:35,458 - action Bot_2 goTo(RoomB1)
+15:25:42,067 - action Bot_3 goTo(RoomC1)
+15:25:45,592 - action Bot_2 goToBlock(59)
+15:25:46,236 - action Bot_2 pickUp(59)
+15:25:47,210 - action Bot_2 goTo(RoomC3)
+15:25:49,185 - action Bot_3 goToBlock(47)
+15:25:49,572 - action Bot_3 pickUp(47)
+15:25:50,548 - action Bot_3 goTo(RoomC3)
+15:25:53,820 - Bot Bot_2 collided.
+15:25:53,821 - action Bot_3 putDown
+15:25:54,030 - action Bot_3 goTo(RoomC1)
+15:26:03,060 - action Bot_3 goTo(RoomC2)
+15:26:06,290 - action Bot_3 goToBlock(62)
+15:26:06,870 - action Bot_3 pickUp(62)
+15:26:07,795 - action Bot_3 goTo(RoomC3)
+15:26:10,429 - action Bot_3 putDown
+15:26:10,642 - action Bot_3 goTo(RoomC2)
+15:26:17,630 - action Bot_3 goTo(RoomC2)
+15:26:21,808 - total time is 96 minutes and 14 seconds
+15:26:21,809 - agentsummary Bot_1 handicaps none
+15:26:21,809 - agentsummary Assembler gooddrops 0
+15:26:21,809 - agentsummary Assembler wrongdrops 0
+15:26:21,809 - agentsummary Assembler nmessage 0
+15:26:21,809 - agentsummary Assembler idletime 4.768
+15:26:21,809 - agentsummary Assembler nroomsentered 1
+15:26:21,809 - agentsummary Bot_2 handicaps none
+15:26:21,809 - agentsummary Retriever1 gooddrops 0
+15:26:21,809 - agentsummary Retriever1 wrongdrops 0
+15:26:21,809 - agentsummary Retriever1 nmessage 0
+15:26:21,809 - agentsummary Retriever1 idletime 7.802
+15:26:21,809 - agentsummary Retriever1 nroomsentered 3
+15:26:21,809 - agentsummary Bot_3 handicaps none
+15:26:21,809 - agentsummary Retriever2 gooddrops 0
+15:26:21,809 - agentsummary Retriever2 wrongdrops 0
+15:26:21,809 - agentsummary Retriever2 nmessage 0
+15:26:21,809 - agentsummary Retriever2 idletime 15.712
+15:26:21,809 - agentsummary Retriever2 nroomsentered 9

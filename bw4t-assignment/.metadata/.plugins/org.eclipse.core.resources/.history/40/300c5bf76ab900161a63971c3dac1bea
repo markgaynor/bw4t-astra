@@ -1,0 +1,119 @@
+package bw4t;
+import astra.lang.Strings;
+
+agent Main {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+	
+	types model {
+		formula holding(long);
+		formula retrieved(string);
+		formula remove(string);
+		formula signalAssembler(string);
+		formula sequence(list);
+	}
+	
+	rule +!main(list args) {
+		// Launches the client jar and connects to the server. 
+		ei.launch("bw4t", "bw4t-client-3.8.6.jar");
+		ei.init([agentcount("3")]);
+		ei.join();
+		ei.startEnv();
+			
+		// Creates agents. 
+		system.createAgent("Assembler", "bw4t.Assembler");
+		system.createAgent("Retriever1", "bw4t.Retriever");
+		
+		// Receives the target sequence from the Assembler.
+		list sequence = [];
+		when(sequence(list L)){
+			C.println("Sequence received from Assembler.");
+			sequence = L;
+		}
+		
+		while(true){
+			// Handling when a Retriever has retrieved a block in the sequence or the Assembler has found it.
+			when(remove(string colour)){
+				int i = 0;
+				int j = 0; // Control to prevent a colour from being removed from the sequence more than once
+				// Loops over the sequence and removes the first occurrence of that colour block.
+				while(i < prelude.size(sequence) & j == 0){
+					if(strings.equal(prelude.valueAsString(sequence, i), colour)){
+						boolean x = prelude.remove(sequence, i);
+						j = 1;
+					}
+					i = i+1;
+				}
+				
+				C.println("Blocks left to find:");	
+				forall(string block: sequence){
+					C.println(block);
+				}
+				
+				// Drops the belief.
+				-remove(colour);
+			}
+			
+			// All the blocks have been found...
+			if(prelude.size(sequence) == 0){
+				// Dispatches the assembler.
+				C.println("All blocks found. Signalling assembler...");
+        		send(inform, "Assembler", signalAssembler(""));
+        		
+        		// Terminates all Retriever agents.
+        		list retrievers = system.getAgentsOfType("bw4t.Retriever");
+        		forall (string agentname : retrievers) {
+        			system.terminateAgent(agentname);
+				}
+			}
+			
+			//main keeps a list of sequence
+			//when a blockgetter finds a block, it messages main with that block's colour
+			//if that colour is in the list, take it out
+			//when the list is empty, dispatch the assembler
+		}	
+	}
+	
+	// Assembler has sent the target sequence.
+	rule @message(inform, string sender, sequence(list L)){
+		+sequence(L);
+	}	
+	
+	// Retriever has retrieved a block in the sequence.
+	rule @message(inform, string sender, retrieved(string colour)) {
+		+remove(colour);
+    }
+
+// Rule for moving to a location.	
+rule +!at(string Location) : ~ei.at(Location) {
+	ei.goTo(Location);
+	wait(ei.at(Location));
+}
+
+// Rule for moving to a block.
+rule +!atBlock(long Block) {
+	ei.goToBlock(Block);
+	wait(ei.state("arrived"));
+}
+
+// Rule for picking up a block.
+rule +!holding(long Block) : ~ei.holding(long X) {
+	ei.pickUp(Block);
+	C.println("before");
+	wait(holding(Block));
+	-holding(Block);
+	C.println("after");
+}
+
+/**
+ * Example Rule to check some events...
+ */
+rule +$ei.event(holding(long Block)) {
+	C.println("holding:" +Block);
+	+holding(Block);
+}
+
+}

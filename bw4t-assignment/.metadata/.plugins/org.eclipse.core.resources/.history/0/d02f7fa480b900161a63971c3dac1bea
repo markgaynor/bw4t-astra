@@ -1,0 +1,23 @@
+package bw4t;
+
+agent Semaphore {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+
+	types model {
+	
+	}
+	
+	initial !init();
+	
+	rule +!init() {
+		// Joins the environment, takes control of its bot and gets the target sequence.
+		ei.join("bw4t");
+		
+	}
+	
+
+}

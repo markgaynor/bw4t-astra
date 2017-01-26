@@ -1,0 +1,49 @@
+14:11:25,205 - sequence
+14:11:25,205 - room RoomA3 contains blocks:  W G
+14:11:25,206 - room RoomA2 contains blocks:  O Y R R W
+14:11:25,206 - room RoomB3 contains blocks:  R G W
+14:11:25,206 - room RoomC1 contains blocks:  P G B W Y
+14:11:25,206 - room RoomA1 contains blocks:  Y O
+14:11:25,206 - room RoomB2 contains blocks:  W Y P P W
+14:11:25,206 - room RoomC3 contains blocks:  P O
+14:11:25,206 - room RoomB1 contains blocks:  O R
+14:11:25,206 - room RoomC2 contains blocks:  P Y
+14:11:25,206 - sequence W P Y W P G
+14:11:31,383 - action Bot_1 goTo(RoomC3)
+14:11:31,558 - action Bot_2 goTo(RoomA1)
+14:11:38,882 - action Bot_1 goTo(FrontRoomC3)
+14:11:40,635 - action Bot_2 goToBlock(53)
+14:11:41,125 - action Bot_2 pickUp(53)
+14:11:41,844 - action Bot_2 goTo(RoomC3)
+14:11:50,221 - action Bot_2 putDown
+14:11:50,398 - action Bot_2 goTo(RoomA1)
+14:12:01,325 - action Bot_2 goTo(RoomA2)
+14:12:09,449 - action Bot_2 goToBlock(44)
+14:12:09,915 - action Bot_2 pickUp(44)
+14:12:10,743 - action Bot_2 goTo(RoomC3)
+14:12:18,267 - action Bot_2 putDown
+14:12:18,437 - action Bot_2 goTo(RoomA2)
+14:12:27,327 - action Bot_2 goTo(RoomA3)
+14:12:30,020 - action Bot_2 goToBlock(38)
+14:12:30,342 - action Bot_2 pickUp(38)
+14:12:31,020 - action Bot_2 goTo(RoomC3)
+14:12:37,558 - action Bot_2 putDown
+14:12:37,729 - action Bot_2 goTo(RoomA3)
+14:12:45,490 - action Bot_2 goToBlock(39)
+14:12:45,950 - action Bot_2 pickUp(39)
+14:12:46,688 - action Bot_2 goTo(RoomC3)
+14:12:53,373 - action Bot_2 putDown
+14:12:53,547 - action Bot_2 goTo(RoomA3)
+14:13:00,788 - action Bot_2 goTo(RoomB1)
+14:13:08,893 - action Bot_2 goTo(RoomB2)
+14:13:12,698 - action Bot_2 goToBlock(57)
+14:13:13,208 - action Bot_2 pickUp(57)
+14:13:13,977 - action Bot_2 goTo(RoomC3)
+14:13:19,949 - action Bot_2 putDown
+14:13:20,122 - action Bot_2 goTo(RoomB2)
+14:13:21,128 - action Bot_1 goTo(RoomC3)
+14:13:26,458 - action Bot_2 goToBlock(58)
+14:13:27,102 - action Bot_2 pickUp(58)
+14:13:27,955 - action Bot_2 goTo(RoomC3)
+14:13:33,809 - Bot Bot_2 collided.
+14:15:03,231 - total time is 24 minutes and 56 seconds

@@ -1,0 +1,19 @@
+19:00:18,729 - sequence
+19:00:18,729 - room RoomA3 contains blocks:  P G R
+19:00:18,729 - room RoomA2 contains blocks:  R G R P Y
+19:00:18,729 - room RoomB3 contains blocks:  W Y G G
+19:00:18,729 - room RoomC1 contains blocks:  O W Y O
+19:00:18,729 - room RoomA1 contains blocks:  B R
+19:00:18,729 - room RoomB2 contains blocks:  B W B
+19:00:18,729 - room RoomC3 contains blocks:  O P G
+19:00:18,729 - room RoomB1 contains blocks:  Y
+19:00:18,729 - room RoomC2 contains blocks:  Y P B
+19:00:18,729 - sequence B O P B Y W
+19:00:40,969 - action Bot_1 goTo(RoomC3)
+19:00:41,878 - action Bot_2 goTo(RoomC2)
+19:00:42,057 - action Bot_3 goTo(RoomA2)
+19:00:49,995 - action Bot_2 goToBlock(63)
+19:00:50,538 - action Bot_2 pickUp(63)
+19:00:51,921 - action Bot_2 goTo(FrontRoomC3)
+19:00:54,701 - action Bot_1 goTo(FrontRoomC3)
+19:01:26,650 - total time is 311 minutes and 19 seconds

@@ -1,0 +1,20 @@
+18:00:03,856 - sequence
+18:00:03,856 - room RoomA3 contains blocks:  R P
+18:00:03,856 - room RoomA2 contains blocks:  W O W
+18:00:03,856 - room RoomB3 contains blocks: 
+18:00:03,856 - room RoomC1 contains blocks:  Y O R
+18:00:03,856 - room RoomA1 contains blocks:  G B G
+18:00:03,856 - room RoomB2 contains blocks:  P B
+18:00:03,856 - room RoomC3 contains blocks:  P W O O O W Y G
+18:00:03,856 - room RoomB1 contains blocks:  R Y P
+18:00:03,856 - room RoomC2 contains blocks:  P B R G
+18:00:03,856 - sequence W R P O W P
+18:00:22,717 - action Bot_1 goTo(RoomC3)
+18:00:23,541 - action Bot_2 goTo(RoomC2)
+18:00:23,715 - action Bot_3 goTo(RoomA2)
+18:00:30,632 - action Bot_2 goToBlock(62)
+18:00:33,463 - action Bot_3 goToBlock(40)
+18:00:34,065 - action Bot_3 pickUp(40)
+18:00:35,193 - action Bot_3 goTo(RoomC3)
+18:00:42,586 - Bot Bot_3 collided.
+18:00:46,854 - total time is 250 minutes and 39 seconds

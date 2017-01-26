@@ -1,0 +1,54 @@
+14:16:53,417 - sequence
+14:16:53,417 - room RoomA3 contains blocks:  R W G
+14:16:53,417 - room RoomA2 contains blocks:  R Y Y
+14:16:53,418 - room RoomB3 contains blocks: 
+14:16:53,418 - room RoomC1 contains blocks:  B O
+14:16:53,418 - room RoomA1 contains blocks:  Y G
+14:16:53,418 - room RoomB2 contains blocks:  G W W W P Y
+14:16:53,418 - room RoomC3 contains blocks:  O W Y R
+14:16:53,418 - room RoomB1 contains blocks:  P Y O
+14:16:53,418 - room RoomC2 contains blocks:  R B B Y R
+14:16:53,418 - sequence G O R B B W
+14:25:34,691 - action Bot_1 goTo(RoomC3)
+14:25:34,841 - action Bot_2 goTo(RoomA1)
+14:25:45,009 - action Bot_1 goTo(FrontRoomC3)
+14:25:45,257 - action Bot_2 goToBlock(47)
+14:25:45,813 - action Bot_2 pickUp(47)
+14:25:46,650 - action Bot_2 goTo(RoomC3)
+14:25:55,015 - action Bot_2 putDown
+14:25:55,159 - action Bot_2 goTo(RoomA1)
+14:26:04,935 - action Bot_2 goTo(RoomA2)
+14:26:07,761 - action Bot_2 goToBlock(41)
+14:26:08,342 - action Bot_2 pickUp(41)
+14:26:09,070 - action Bot_2 goTo(RoomC3)
+14:26:16,693 - action Bot_2 putDown
+14:26:16,863 - action Bot_2 goTo(RoomA2)
+14:26:27,274 - action Bot_2 goTo(RoomA3)
+14:26:31,678 - action Bot_2 goToBlock(39)
+14:26:32,355 - action Bot_2 pickUp(39)
+14:26:33,039 - action Bot_2 goTo(RoomC3)
+14:26:39,848 - action Bot_2 putDown
+14:26:39,985 - action Bot_2 goTo(RoomA3)
+14:26:48,118 - action Bot_2 goTo(RoomB1)
+14:26:56,790 - action Bot_2 goToBlock(60)
+14:26:57,355 - action Bot_2 pickUp(60)
+14:26:58,047 - action Bot_2 goTo(RoomC3)
+14:27:04,826 - action Bot_2 putDown
+14:27:04,967 - action Bot_2 goTo(RoomB1)
+14:27:12,696 - action Bot_2 goTo(RoomB2)
+14:27:20,070 - action Bot_2 goTo(RoomB3)
+14:27:22,810 - action Bot_2 goTo(RoomC1)
+14:27:29,470 - action Bot_2 goToBlock(44)
+14:27:30,058 - action Bot_2 pickUp(44)
+14:27:30,775 - action Bot_2 goTo(RoomC3)
+14:27:34,277 - action Bot_2 putDown
+14:27:34,405 - action Bot_2 goTo(RoomC1)
+14:27:39,059 - action Bot_2 goTo(RoomC2)
+14:27:42,192 - action Bot_2 goToBlock(62)
+14:27:42,707 - action Bot_2 pickUp(62)
+14:27:43,401 - action Bot_2 goTo(RoomC3)
+14:27:45,968 - action Bot_2 putDown
+14:27:46,140 - action Bot_2 goTo(RoomC2)
+14:27:47,199 - action Bot_1 goTo(RoomC3)
+14:27:50,381 - action Bot_2 goTo(RoomC2)
+14:29:38,949 - total time is 39 minutes and 31 seconds

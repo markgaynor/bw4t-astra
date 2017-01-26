@@ -1,0 +1,55 @@
+package bw4t;
+
+agent Semaphore {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+
+	types model {
+		formula occupiedChange(string);
+	}
+	
+	initial !init();
+	
+	rule +!init() {
+		// Joins the environment, takes control of its bot and gets the target sequence.
+		ei.join("bw4t");
+		
+		// Tracks the occupancy of Room C3 to ensure mutual exclusion.
+		while(true){
+			
+		}
+		
+	}
+	
+// Rule for handling the occupied percept.
+rule +$ei.event(occupied(string room)){
+	+occupiedChange(room);
+}
+
+// Rule for the occupied semaphore. 
+rule +!occupied(boolean semaphore){
+	if(semaphore == false){
+		C.println("Someone is entering Room C3.");
+		+occupied("RoomC3");
+		semaphore = true;
+	}
+	else{
+		C.println("Someone is leaving Room C3.");
+		-occupied("RoomC3");
+	}
+}
+
+rule +!trackOccupied(){
+	boolean semaphore = false;
+	
+	while(true){
+		when(occupiedChange("RoomC3")){
+			!occupied(semaphore);
+		}
+	}
+}
+
+}

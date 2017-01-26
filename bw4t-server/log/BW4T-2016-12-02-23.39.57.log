@@ -1,0 +1,19 @@
+23:40:03,408 - sequence
+23:40:03,408 - room RoomA3 contains blocks: 
+23:40:03,409 - room RoomA2 contains blocks:  Y G G
+23:40:03,409 - room RoomB3 contains blocks:  P Y
+23:40:03,409 - room RoomC1 contains blocks:  Y R R W G P
+23:40:03,410 - room RoomA1 contains blocks:  B O O
+23:40:03,411 - room RoomB2 contains blocks:  B Y
+23:40:03,411 - room RoomC3 contains blocks:  R
+23:40:03,412 - room RoomB1 contains blocks:  B R P
+23:40:03,412 - room RoomC2 contains blocks:  W R
+23:40:03,412 - sequence B G Y P O R
+23:40:16,591 - action Bot_1 goTo(FrontRoomC3)
+23:40:17,749 - action Bot_2 goTo(RoomA1)
+23:40:26,948 - action Bot_2 goToBlock(49)
+23:40:27,376 - action Bot_2 pickUp(49)
+23:40:28,260 - action Bot_2 goTo(RoomC3)
+23:40:32,993 - action Bot_2 putDown
+23:40:33,399 - action Bot_2 goTo(RoomA1)
+23:40:38,142 - action Bot_2 goToBlock(50)

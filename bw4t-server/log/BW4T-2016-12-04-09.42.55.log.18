@@ -1,0 +1,90 @@
+09:43:20,108 - sequence
+09:43:20,108 - room RoomA3 contains blocks:  Y G W G Y G
+09:43:20,109 - room RoomA2 contains blocks:  G W G P Y
+09:43:20,109 - room RoomB3 contains blocks:  W G B
+09:43:20,109 - room RoomC1 contains blocks:  B B O
+09:43:20,109 - room RoomA1 contains blocks:  R
+09:43:20,109 - room RoomB2 contains blocks:  B B G
+09:43:20,110 - room RoomC3 contains blocks:  W
+09:43:20,110 - room RoomB1 contains blocks:  Y P
+09:43:20,110 - room RoomC2 contains blocks:  O O G B
+09:43:20,110 - sequence B W O G Y W
+09:53:38,095 - action Bot_1 goTo(RoomC3)
+09:53:44,437 - action Bot_1 goTo(FrontRoomC3)
+09:53:45,375 - action Bot_1 goTo(RoomC2)
+09:53:47,207 - action Bot_1 goToBlock(62)
+09:53:47,676 - action Bot_1 pickUp(62)
+09:53:48,323 - action Bot_1 goTo(RoomC3)
+09:53:50,818 - action Bot_1 putDown
+09:53:50,948 - action Bot_1 goTo(RoomC2)
+09:53:55,732 - action Bot_1 goToBlock(64)
+09:53:56,139 - action Bot_1 pickUp(64)
+09:53:56,778 - action Bot_1 goTo(RoomC3)
+09:53:59,224 - action Bot_1 putDown
+09:53:59,351 - action Bot_1 goTo(RoomC2)
+09:54:02,625 - action Bot_1 goToBlock(65)
+09:54:03,215 - action Bot_1 pickUp(65)
+09:54:03,852 - action Bot_1 goTo(RoomC3)
+09:54:06,488 - action Bot_1 putDown
+09:54:06,612 - action Bot_1 goTo(RoomC2)
+09:54:10,095 - action Bot_1 goTo(RoomC1)
+09:54:14,952 - action Bot_1 goTo(RoomB3)
+09:54:21,804 - action Bot_1 goToBlock(49)
+09:54:22,341 - action Bot_1 pickUp(49)
+09:54:22,997 - action Bot_1 goTo(RoomC3)
+09:54:28,095 - action Bot_1 putDown
+09:54:28,216 - action Bot_1 goTo(RoomB3)
+09:54:34,840 - action Bot_1 goTo(RoomB2)
+09:54:39,259 - action Bot_1 goTo(RoomB1)
+09:54:41,736 - action Bot_1 goToBlock(60)
+09:54:42,272 - action Bot_1 pickUp(60)
+09:54:42,912 - action Bot_1 goTo(RoomC3)
+09:54:49,646 - action Bot_1 putDown
+09:54:49,783 - action Bot_1 goTo(RoomB1)
+09:54:57,439 - action Bot_1 goTo(RoomA3)
+09:55:06,770 - action Bot_1 goTo(RoomA2)
+09:55:11,515 - action Bot_1 goTo(RoomA1)
+09:55:14,562 - action Bot_1 goTo(RoomC1)
+09:55:22,609 - action Bot_1 goTo(RoomB3)
+09:55:30,277 - action Bot_1 goTo(RoomB2)
+09:55:34,169 - action Bot_1 goTo(RoomB1)
+09:55:37,237 - action Bot_1 goTo(RoomA3)
+09:55:46,533 - action Bot_1 goTo(RoomA2)
+09:55:51,290 - action Bot_1 goTo(RoomA1)
+09:55:54,350 - action Bot_1 goTo(RoomC1)
+09:56:02,386 - action Bot_1 goTo(RoomB3)
+09:56:09,987 - action Bot_1 goTo(RoomB2)
+09:56:13,864 - action Bot_1 goTo(RoomB1)
+09:56:16,914 - action Bot_1 goTo(RoomA3)
+09:56:26,290 - action Bot_1 goTo(RoomA2)
+09:56:31,040 - action Bot_1 goTo(RoomA1)
+09:56:34,102 - action Bot_1 goTo(RoomC1)
+09:56:42,106 - action Bot_1 goTo(RoomB3)
+09:56:49,731 - action Bot_1 goTo(RoomB2)
+09:56:53,581 - action Bot_1 goTo(RoomB1)
+09:56:56,614 - action Bot_1 goTo(RoomA3)
+09:57:05,872 - action Bot_1 goTo(RoomA2)
+09:57:10,632 - action Bot_1 goTo(RoomA1)
+09:57:13,694 - action Bot_1 goTo(RoomC1)
+09:57:21,634 - action Bot_1 goTo(RoomB3)
+09:57:29,273 - action Bot_1 goTo(RoomB2)
+09:57:33,149 - action Bot_1 goTo(RoomB1)
+09:57:36,196 - action Bot_1 goTo(RoomA3)
+09:57:45,514 - action Bot_1 goTo(RoomA2)
+09:57:50,296 - action Bot_1 goTo(RoomA1)
+09:57:53,338 - action Bot_1 goTo(RoomC1)
+09:58:01,367 - action Bot_1 goTo(RoomB3)
+09:58:09,010 - action Bot_1 goTo(RoomB2)
+09:58:12,915 - action Bot_1 goTo(RoomB1)
+09:58:15,929 - action Bot_1 goTo(RoomA3)
+09:58:25,156 - action Bot_1 goTo(RoomA2)
+09:58:29,931 - action Bot_1 goTo(RoomA1)
+09:58:32,981 - action Bot_1 goTo(RoomC1)
+09:58:40,967 - action Bot_1 goTo(RoomB3)
+09:58:45,092 - total time is 15 minutes and 44 seconds
+09:58:45,092 - agentsummary Bot_1 handicaps none
+09:58:45,092 - agentsummary Assembler gooddrops 0
+09:58:45,092 - agentsummary Assembler wrongdrops 0
+09:58:45,092 - agentsummary Assembler nmessage 0
+09:58:45,092 - agentsummary Assembler idletime 77.063
+09:58:45,093 - agentsummary Assembler nroomsentered 55

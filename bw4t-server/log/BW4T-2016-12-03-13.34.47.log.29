@@ -1,0 +1,45 @@
+18:02:02,993 - sequence
+18:02:02,994 - room RoomA3 contains blocks:  O
+18:02:02,994 - room RoomA2 contains blocks:  Y Y R O B
+18:02:02,994 - room RoomB3 contains blocks:  P O
+18:02:02,994 - room RoomC1 contains blocks:  G B R R P O
+18:02:02,994 - room RoomA1 contains blocks:  W W P
+18:02:02,994 - room RoomB2 contains blocks:  O
+18:02:02,994 - room RoomC3 contains blocks:  G B Y R
+18:02:02,994 - room RoomB1 contains blocks:  O P R
+18:02:02,994 - room RoomC2 contains blocks:  G O P
+18:02:02,994 - sequence Y P G W O G
+18:19:21,559 - action Bot_1 goTo(RoomC3)
+18:19:22,406 - action Bot_2 goTo(RoomC2)
+18:19:22,617 - action Bot_3 goTo(RoomA2)
+18:19:29,456 - action Bot_2 goToBlock(63)
+18:19:30,202 - action Bot_2 pickUp(63)
+18:19:31,344 - action Bot_2 goTo(FrontRoomC3)
+18:19:32,426 - action Bot_3 goToBlock(39)
+18:19:32,883 - action Bot_3 pickUp(39)
+18:19:33,321 - action Bot_2 goTo(RoomC3)
+18:19:33,880 - Bot Bot_2 collided.
+18:19:34,010 - action Bot_3 goTo(FrontRoomC3)
+18:19:35,713 - action Bot_1 goTo(FrontRoomC3)
+18:19:40,723 - action Bot_3 goTo(RoomC3)
+18:19:41,590 - action Bot_3 putDown
+18:19:41,808 - action Bot_3 goTo(RoomA2)
+18:19:42,546 - total time is 269 minutes and 35 seconds
+18:19:42,546 - agentsummary Bot_1 handicaps none
+18:19:42,546 - agentsummary Assembler gooddrops 0
+18:19:42,546 - agentsummary Assembler wrongdrops 0
+18:19:42,546 - agentsummary Assembler nmessage 0
+18:19:42,546 - agentsummary Assembler idletime 9.935
+18:19:42,546 - agentsummary Assembler nroomsentered 1
+18:19:42,546 - agentsummary Bot_2 handicaps none
+18:19:42,546 - agentsummary Retriever1 gooddrops 0
+18:19:42,546 - agentsummary Retriever1 wrongdrops 0
+18:19:42,546 - agentsummary Retriever1 nmessage 0
+18:19:42,546 - agentsummary Retriever1 idletime 3.156
+18:19:42,546 - agentsummary Retriever1 nroomsentered 1
+18:19:42,546 - agentsummary Bot_3 handicaps none
+18:19:42,546 - agentsummary Retriever2 gooddrops 0
+18:19:42,546 - agentsummary Retriever2 wrongdrops 0
+18:19:42,546 - agentsummary Retriever2 nmessage 0
+18:19:42,546 - agentsummary Retriever2 idletime 2.885
+18:19:42,546 - agentsummary Retriever2 nroomsentered 2

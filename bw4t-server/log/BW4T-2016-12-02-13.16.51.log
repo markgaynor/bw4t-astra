@@ -1,0 +1,40 @@
+13:25:39,596 - sequence
+13:25:39,596 - room RoomA3 contains blocks: 
+13:25:39,596 - room RoomA2 contains blocks:  Y G G
+13:25:39,596 - room RoomB3 contains blocks:  P Y
+13:25:39,597 - room RoomC1 contains blocks:  Y R R W G P
+13:25:39,597 - room RoomA1 contains blocks:  B O O
+13:25:39,597 - room RoomB2 contains blocks:  B Y
+13:25:39,597 - room RoomC3 contains blocks:  R
+13:25:39,597 - room RoomB1 contains blocks:  B R P
+13:25:39,598 - room RoomC2 contains blocks:  W R
+13:25:39,598 - sequence B G Y P O R
+13:33:57,087 - action Bot_1 goTo(RoomA1)
+13:34:03,232 - action Bot_1 goToBlock(49)
+13:34:03,498 - action Bot_1 pickUp(49)
+13:34:04,235 - action Bot_1 goTo(DropZone)
+13:34:09,324 - action Bot_1 putDown
+13:34:09,532 - action Bot_1 goTo(RoomA1)
+13:34:14,911 - action Bot_1 goTo(RoomA2)
+13:34:17,019 - action Bot_1 goToBlock(39)
+13:34:17,468 - action Bot_1 pickUp(39)
+13:34:18,177 - action Bot_1 goTo(DropZone)
+13:34:23,948 - action Bot_1 putDown
+13:34:24,155 - action Bot_1 goTo(RoomA2)
+13:34:29,889 - action Bot_1 goTo(RoomA3)
+13:34:31,517 - action Bot_1 goTo(RoomB1)
+13:34:35,865 - action Bot_1 goTo(RoomB2)
+13:34:37,872 - action Bot_1 goToBlock(53)
+13:34:38,251 - action Bot_1 pickUp(53)
+13:34:38,970 - action Bot_1 goTo(DropZone)
+13:34:43,756 - action Bot_1 putDown
+13:34:43,956 - action Bot_1 goTo(RoomB2)
+13:34:48,822 - action Bot_1 goTo(RoomB3)
+13:34:50,851 - action Bot_1 goToBlock(41)
+13:34:51,231 - action Bot_1 pickUp(41)
+13:34:51,920 - action Bot_1 goTo(DropZone)
+13:34:56,168 - action Bot_1 putDown
+13:34:56,372 - action Bot_1 goTo(RoomB3)
+13:35:00,768 - action Bot_1 goTo(RoomC1)
+13:35:05,550 - action Bot_1 goTo(RoomC2)
+13:35:07,436 - action Bot_1 goTo(RoomC3)

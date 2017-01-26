@@ -1,0 +1,48 @@
+14:50:40,910 - sequence
+14:50:40,910 - room RoomA3 contains blocks:  O W R W B
+14:50:40,910 - room RoomA2 contains blocks:  P
+14:50:40,910 - room RoomB3 contains blocks:  W G
+14:50:40,910 - room RoomC1 contains blocks:  G B
+14:50:40,910 - room RoomA1 contains blocks:  B Y R O
+14:50:40,910 - room RoomB2 contains blocks:  P Y R P R
+14:50:40,910 - room RoomC3 contains blocks:  R B B
+14:50:40,910 - room RoomB1 contains blocks:  R B Y
+14:50:40,910 - room RoomC2 contains blocks:  W O Y
+14:50:40,910 - sequence R R W P B B
+14:50:57,714 - action Bot_1 goTo(RoomC3)
+14:50:57,903 - action Bot_2 goTo(RoomA1)
+14:51:06,913 - action Bot_1 goTo(FrontRoomC3)
+14:51:07,443 - action Bot_2 goToBlock(48)
+14:51:07,894 - action Bot_2 pickUp(48)
+14:51:08,682 - action Bot_2 goTo(RoomC3)
+14:51:17,016 - action Bot_2 putDown
+14:51:17,166 - action Bot_2 goTo(RoomA1)
+14:51:27,441 - action Bot_2 goToBlock(50)
+14:51:28,064 - action Bot_2 pickUp(50)
+14:51:28,810 - action Bot_2 goTo(RoomC3)
+14:51:37,213 - action Bot_2 putDown
+14:51:37,351 - action Bot_2 goTo(RoomA1)
+14:51:48,045 - action Bot_2 goTo(RoomA2)
+14:51:50,957 - action Bot_2 goToBlock(43)
+14:51:51,228 - action Bot_2 pickUp(43)
+14:51:51,913 - action Bot_2 goTo(RoomC3)
+14:51:59,191 - action Bot_2 putDown
+14:51:59,338 - action Bot_2 goTo(RoomA2)
+14:52:07,468 - action Bot_2 goTo(RoomA3)
+14:52:11,004 - action Bot_2 goToBlock(39)
+14:52:11,514 - action Bot_2 pickUp(39)
+14:52:12,196 - action Bot_2 goTo(RoomC3)
+14:52:18,955 - action Bot_2 putDown
+14:52:19,106 - action Bot_2 goTo(RoomA3)
+14:52:20,291 - action Bot_1 goTo(RoomC3)
+14:52:26,233 - action Bot_2 goToBlock(40)
+14:52:26,658 - action Bot_2 pickUp(40)
+14:52:27,334 - action Bot_2 goTo(RoomC3)
+14:52:33,786 - Bot Bot_2 collided.
+14:52:38,856 - action Bot_1 goToBlock(57)
+14:52:39,259 - action Bot_1 pickUp(57)
+14:52:39,954 - action Bot_1 goTo(DropZone)
+14:52:45,691 - action Bot_1 putDown
+14:52:45,823 - action Bot_1 goTo(RoomC3)
+14:52:51,617 - action Bot_1 goToBlock(57)
+14:58:10,301 - total time is 68 minutes and 3 seconds

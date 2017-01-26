@@ -1,0 +1,17 @@
+22:47:24,835 - sequence
+22:47:24,836 - room RoomA3 contains blocks: 
+22:47:24,837 - room RoomA2 contains blocks:  Y G G
+22:47:24,837 - room RoomB3 contains blocks:  P Y
+22:47:24,837 - room RoomC1 contains blocks:  Y R R W G P
+22:47:24,838 - room RoomA1 contains blocks:  B O O
+22:47:24,838 - room RoomB2 contains blocks:  B Y
+22:47:24,839 - room RoomC3 contains blocks:  R
+22:47:24,839 - room RoomB1 contains blocks:  B R P
+22:47:24,839 - room RoomC2 contains blocks:  W R
+22:47:24,840 - sequence B G Y P O R
+22:47:33,509 - action Bot_1 goTo(RoomC3)
+22:47:34,809 - action Bot_2 goTo(RoomA1)
+22:47:49,842 - action Bot_2 goToBlock(49)
+22:47:50,302 - action Bot_2 pickUp(49)
+22:47:51,192 - action Bot_2 goTo(RoomC3)
+22:47:55,843 - Bot Bot_2 collided.

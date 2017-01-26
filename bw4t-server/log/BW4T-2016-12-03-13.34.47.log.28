@@ -1,0 +1,42 @@
+18:19:43,666 - sequence
+18:19:43,667 - room RoomA3 contains blocks:  W W
+18:19:43,667 - room RoomA2 contains blocks:  R W
+18:19:43,667 - room RoomB3 contains blocks:  P O P P
+18:19:43,667 - room RoomC1 contains blocks:  G Y
+18:19:43,667 - room RoomA1 contains blocks:  B W
+18:19:43,667 - room RoomB2 contains blocks:  Y R Y
+18:19:43,667 - room RoomC3 contains blocks:  W R P R
+18:19:43,667 - room RoomB1 contains blocks:  P W O P R
+18:19:43,667 - room RoomC2 contains blocks:  O Y R O
+18:19:43,667 - sequence W O P P Y Y
+18:20:25,857 - action Bot_1 goTo(RoomC3)
+18:20:26,725 - action Bot_2 goTo(RoomC2)
+18:20:26,837 - action Bot_3 goTo(RoomA2)
+18:20:33,496 - action Bot_2 goToBlock(62)
+18:20:34,105 - action Bot_2 pickUp(62)
+18:20:35,246 - action Bot_2 goTo(FrontRoomC3)
+18:20:37,083 - action Bot_2 goTo(RoomC3)
+18:20:37,656 - Bot Bot_2 collided.
+18:20:38,947 - action Bot_3 goToBlock(41)
+18:20:39,388 - action Bot_3 pickUp(41)
+18:20:40,112 - action Bot_1 goTo(FrontRoomC3)
+18:20:40,507 - action Bot_3 goTo(FrontRoomC3)
+18:20:44,837 - total time is 270 minutes and 37 seconds
+18:20:44,837 - agentsummary Bot_1 handicaps none
+18:20:44,837 - agentsummary Assembler gooddrops 0
+18:20:44,837 - agentsummary Assembler wrongdrops 0
+18:20:44,837 - agentsummary Assembler nmessage 0
+18:20:44,837 - agentsummary Assembler idletime 10.053
+18:20:44,837 - agentsummary Assembler nroomsentered 1
+18:20:44,837 - agentsummary Bot_2 handicaps none
+18:20:44,837 - agentsummary Retriever1 gooddrops 0
+18:20:44,837 - agentsummary Retriever1 wrongdrops 0
+18:20:44,837 - agentsummary Retriever1 nmessage 0
+18:20:44,837 - agentsummary Retriever1 idletime 2.99
+18:20:44,837 - agentsummary Retriever1 nroomsentered 1
+18:20:44,837 - agentsummary Bot_3 handicaps none
+18:20:44,837 - agentsummary Retriever2 gooddrops 0
+18:20:44,837 - agentsummary Retriever2 wrongdrops 0
+18:20:44,837 - agentsummary Retriever2 nmessage 0
+18:20:44,837 - agentsummary Retriever2 idletime 4.983
+18:20:44,837 - agentsummary Retriever2 nroomsentered 1

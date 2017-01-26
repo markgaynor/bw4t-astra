@@ -1,0 +1,62 @@
+package bw4t;
+
+agent Semaphore {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+
+	types model {
+		formula occupiedChange(string);
+		formula occupied(string);
+		formula enteringC3(string);
+		formula exitingC3(string);
+	}
+
+/*	
+	initial !init();
+	
+	rule +!init() {
+		ei.join("bw4t");
+		
+		boolean semaphore = false;
+		// Tracks the occupancy of Room C3 to ensure mutual exclusion.
+		while(true){
+			semaphore = false; // Room is not occupied
+			while(occupied("RoomC3")){
+				semaphore = true; // Room is occupied
+			}
+		}
+	}
+	*/
+
+// Someone has entered the room.
+rule @message(inform, string sender, enteringC3(string room)){
+	C.println("Someone has entered Room C3.");
+	+occupied("RoomC3");
+
+	// Informs all Retriever agents.
+	list retrievers = system.getAgentsOfType("bw4t.Retriever");
+	forall (string agentName : retrievers) {
+		send(inform, agentName, exitingC3("RoomC3"));  
+
+	}
+}	
+
+// Someone has exited the room.
+rule @message(inform, string sender, exitingC3(string room)){
+	C.println("Someone has exited Room C3.");
+	+occupied("RoomC3");
+
+	// Informs all Retriever agents.
+	list retrievers = system.getAgentsOfType("bw4t.Retriever");
+	forall (string agentName : retrievers) {
+		send(inform, agentName, exitingC3("RoomC3"));  
+
+	}
+}	
+
+}
+
+

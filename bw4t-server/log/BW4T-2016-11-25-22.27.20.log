@@ -1,0 +1,12 @@
+22:27:21,720 - sequence
+22:27:21,723 - room RoomA3 contains blocks:  R B
+22:27:21,723 - room RoomA2 contains blocks:  O Y O
+22:27:21,724 - room RoomB3 contains blocks:  R O
+22:27:21,725 - room RoomC1 contains blocks:  P Y R W G
+22:27:21,730 - room RoomA1 contains blocks:  W G B
+22:27:21,731 - room RoomB2 contains blocks:  Y O W W O B G
+22:27:21,732 - room RoomC3 contains blocks:  Y W P
+22:27:21,732 - room RoomB1 contains blocks:  Y
+22:27:21,732 - room RoomC2 contains blocks:  P Y
+22:27:21,734 - sequence O P Y R W Y
+22:27:28,603 - action Bot_1 goTo(RoomA1)

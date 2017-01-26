@@ -1,0 +1,43 @@
+17:21:16,968 - sequence
+17:21:16,968 - room RoomA3 contains blocks:  O
+17:21:16,968 - room RoomA2 contains blocks:  O W G
+17:21:16,968 - room RoomB3 contains blocks:  W B
+17:21:16,968 - room RoomC1 contains blocks:  O W O
+17:21:16,968 - room RoomA1 contains blocks:  R O
+17:21:16,968 - room RoomB2 contains blocks:  R R G W B P
+17:21:16,968 - room RoomC3 contains blocks:  R G Y
+17:21:16,968 - room RoomB1 contains blocks:  O W W
+17:21:16,968 - room RoomC2 contains blocks:  B G Y O W
+17:21:16,968 - sequence W R R R G B
+17:21:20,569 - action Bot_1 goTo(RoomC3)
+17:21:21,086 - action Bot_2 goTo(RoomC2)
+17:21:21,284 - action Bot_3 goTo(RoomA2)
+17:21:29,173 - action Bot_2 goToBlock(61)
+17:21:29,855 - action Bot_2 pickUp(61)
+17:21:31,307 - action Bot_1 goTo(FrontRoomC3)
+17:21:31,331 - action Bot_2 goTo(FrontRoomC3)
+17:21:33,383 - action Bot_2 goTo(RoomC3)
+17:21:33,385 - action Bot_3 goToBlock(40)
+17:21:33,761 - action Bot_3 pickUp(40)
+17:21:34,458 - action Bot_2 putDown
+17:21:34,841 - action Bot_2 goTo(RoomC2)
+17:21:35,215 - action Bot_3 goTo(FrontRoomC3)
+17:21:39,505 - total time is 211 minutes and 32 seconds
+17:21:39,505 - agentsummary Bot_1 handicaps none
+17:21:39,505 - agentsummary Assembler gooddrops 0
+17:21:39,505 - agentsummary Assembler wrongdrops 0
+17:21:39,505 - agentsummary Assembler nmessage 0
+17:21:39,505 - agentsummary Assembler idletime 6.47
+17:21:39,505 - agentsummary Assembler nroomsentered 1
+17:21:39,505 - agentsummary Bot_2 handicaps none
+17:21:39,505 - agentsummary Retriever1 gooddrops 0
+17:21:39,505 - agentsummary Retriever1 wrongdrops 0
+17:21:39,505 - agentsummary Retriever1 nmessage 0
+17:21:39,505 - agentsummary Retriever1 idletime 4.971
+17:21:39,505 - agentsummary Retriever1 nroomsentered 3
+17:21:39,505 - agentsummary Bot_3 handicaps none
+17:21:39,505 - agentsummary Retriever2 gooddrops 0
+17:21:39,505 - agentsummary Retriever2 wrongdrops 0
+17:21:39,505 - agentsummary Retriever2 nmessage 0
+17:21:39,505 - agentsummary Retriever2 idletime 5.133
+17:21:39,505 - agentsummary Retriever2 nroomsentered 1

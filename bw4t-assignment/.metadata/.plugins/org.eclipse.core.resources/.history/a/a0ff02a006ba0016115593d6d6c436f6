@@ -1,0 +1,154 @@
+package bw4t;
+
+agent Assembler {
+	module EIS ei;
+	module Console C;
+	module System system;
+	module Prelude prelude;
+	module Strings strings;
+
+	types model {
+		formula holding(long); // Holding a block
+		formula sequence(list); // Sequence percept from the environment
+		formula initiateAssemble(); // Command from main to bring back the blocks
+		formula retrieved(string); // Informing main that a block is already in C3.
+		
+		// Exchange of information with the Semaphore.  
+		formula enteringC3(string);
+		formula exitingC3(string);
+	}
+	
+	initial !init();
+	
+	rule +!init() {
+		// Joins the environment, takes control of its bot and gets the target sequence.
+		ei.join("bw4t");
+		list sequence; // Assembly order
+		list sequenceToFind; // Internal list for initially checking blocks in Room C3
+		ei.link("Bot_1");
+		when(sequence(list L)){
+			sequence = L;
+			sequenceToFind = L + [""];
+		}
+		
+		// Tells main the target sequence. 
+		send(inform, "main", sequence(sequence));
+		
+		// Checks the blocks inside room C3. 
+		send(inform, "Semaphore", enteringC3("RoomC3")); // Tells the semaphore 
+		!at("RoomC3");
+		foreach (ei.color(long X, string F)){
+			int i = 0;
+			int j = 0; // Control to stop the agent from counting the same block twice
+			while(i < prelude.size(sequenceToFind)){
+				// If the current block matches a block in the sequence.
+				if(strings.equal(prelude.valueAsString(sequenceToFind, i), F) & j==0){
+					// Tells main that a block of that colour is already in Room C3.
+					send(inform, "main", retrieved(F));
+					boolean x = prelude.remove(sequenceToFind, i); // Removes that block index from internal sequence
+					j = 1;
+				}
+			i = i+1;
+			}
+		}
+
+		// Goes outside Room C3 and waits for the blocks to be collected. 
+		send(inform, "Semaphore", exitingC3("RoomC3")); // Tells the semaphore 
+		!at("FrontRoomC3");
+		
+		// Edge case: the Assembler is alone and it has to retrieve the blocks itself.
+		if(prelude.size(system.getAgents()) == 3){
+			!retrieve(sequenceToFind);
+		}
+		
+		
+		
+		// Dispatch signal received; assembles the target sequence of blocks. 	
+		when(initiateAssemble()){
+			C.println("Signal received.");
+			!assemble(sequence);
+		}
+	}
+	
+	// Main has sent the dispatch command. 	
+	rule @message(inform, string sender, string X) {
+    	+initiateAssemble();
+    }
+	
+	// Collects all the blocks in order.	
+	rule +!assemble(list L) {
+		// Gets the sequence of blocks. 
+		list sequence = L;
+		
+		// Goes into Room C3. 
+		!at("RoomC3");
+		int i = 0; // Index of the block in the sequence we are looking for
+		
+		C.println("Assembling sequence.");
+		while (i < 6){
+		int j = 0; // Control to stop multiple blocks of same colour from being unnecessarily collected
+			// For every block in the room...
+			foreach(ei.color(long X, string F)){
+				int k = 0; // Control to stop the agent from attempting to collect the same block twice
+				// If the colour of that block matches the current block we are looking for (and we still have blocks to find)...
+				if(i < 6){
+					if(strings.equal(prelude.valueAsString(sequence, i), F) & j==0 & k==0){
+						// Gets that block and advances the sequence.
+						!atBlock(X);
+						!holding(X);
+						!at("DropZone");
+						ei.putDown();
+						!at("RoomC3");
+						i = i+1;
+						j = 1;
+						k = 1;
+					}
+				}
+			}
+		}
+	}
+
+// Rule for moving to a location.	
+rule +!at(string Location) : ~ei.at(Location) {
+	ei.goTo(Location);
+	wait(ei.at(Location));
+}
+
+// Rule for moving to a block.
+rule +!atBlock(long Block) {
+	ei.goToBlock(Block);
+	wait(ei.state("arrived"));
+}
+
+// Rule for picking up a block.
+rule +!holding(long Block) : ~ei.holding(long X) {
+	ei.pickUp(Block);
+	C.println("before");
+	wait(holding(Block));
+	-holding(Block);
+	C.println("after");
+}
+
+/**
+ * Example Rule to check some events...
+ */
+rule +$ei.event(holding(long Block)) {
+	C.println("holding:" +Block);
+	+holding(Block);
+}
+
+// Rule for handling the sequence percept. 
+rule +$ei.event(sequence(list L)){
+	+sequence(L);
+}
+
+// Rule for retrieving all the blocks in the case that the Assembler is the sole agent. 
+rule +!retrieve(list sequence){
+	C.println("No Retriever agents found. Retrieving blocks...");
+	// List of rooms in the environment.
+	list roomList = ["RoomC2", "RoomC1", "RoomB3", "RoomB2", "RoomB1", "RoomA3", "RoomA2", "RoomA1"];
+	
+
+}
+
+}

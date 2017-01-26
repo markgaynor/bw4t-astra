@@ -1,0 +1,11 @@
+18:01:34,540 - sequence
+18:01:34,542 - room RoomA3 contains blocks:  G
+18:01:34,542 - room RoomA2 contains blocks:  G B P
+18:01:34,543 - room RoomB3 contains blocks:  P B
+18:01:34,543 - room RoomC1 contains blocks:  G Y Y Y O
+18:01:34,545 - room RoomA1 contains blocks:  W P
+18:01:34,545 - room RoomB2 contains blocks:  G R B W G
+18:01:34,546 - room RoomC3 contains blocks:  W P O
+18:01:34,546 - room RoomB1 contains blocks:  R G Y Y
+18:01:34,546 - room RoomC2 contains blocks:  P R R
+18:01:34,548 - sequence G W R G R G
