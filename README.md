@@ -2,7 +2,7 @@
 
 A scalable, agent-oriented solution to the *Blocks World for Teams* EIS environment implemented in [*Astra*](http://astralanguage.com/wordpress/), an Agent Programming Language designed for intelligent distributed/concurrent systems built on the Java platform. 
 
-<img src="https://raw.githubusercontent.com/markgaynor/bw4t-astra/master/bw4t.png" alt="Drawing" style="width: 270px;"/>
+<img src="https://raw.githubusercontent.com/markgaynor/bw4t-astra/master/bw4t.png" alt="Drawing" width=270px;"/>
 
 #### Details
 The goal of *Blocks World for Teams* is to jointly deliver a sequence of colored blocks distributed among the rooms in a particular order as fast as possible.
