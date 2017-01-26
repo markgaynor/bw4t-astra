@@ -1,6 +1,6 @@
 ### Blocks World for Teams (BW4T) in Astra 
 
-A scalable, agent-oriented solution to the *Blocks World for Teams* EIS environment implemented in [*Astra*](http://astralanguage.com/wordpress/), an Agent Programming Language designed for intelligent distributed/concurrent systems built on the Java platform. 
+A scalable, agent-oriented solution to the [*Blocks World for Teams*](https://github.com/eishub/BW4T) EIS environment implemented in [*Astra*](http://astralanguage.com/wordpress/), an Agent Programming Language designed for intelligent distributed/concurrent systems built on the Java platform. 
 
 <img src="https://raw.githubusercontent.com/markgaynor/bw4t-astra/master/bw4t.png" alt="Drawing" width=270px;"/>
 
